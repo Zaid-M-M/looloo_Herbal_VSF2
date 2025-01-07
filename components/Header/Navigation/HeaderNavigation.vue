@@ -25,6 +25,7 @@
       /> -->
 
       <!-- Oral Care Menu Start Here-->
+       
       <a href="/default/oral-care.html" class="sf-link sf-header-navigation-item__link nav-item custom_menu menu1" 
         @mouseenter="showDropdown"
         @mouseleave="handleMouseLeave"
@@ -43,37 +44,37 @@
         </span> 
 
         <!-- Oral Care Menu Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu1_dropdown"  v-show="isDropdownVisible" @mouseenter="showDropdown"
+        <div class="header-navigation__subcategories custom_dropdown menu1_dropdown"  v-if="isDropdownVisible" @mouseenter="showDropdown"
         @mouseleave="hideDropdown">
           <div class="header-navigation__subcategories-inner">
 
 
             <div class="header-navigation__subcategory">
-              <a class="header-navigation__link1" href="/default/looloo-herbal-dental-gel-laung-clove-100g.html">
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-dental-gel-laung-clove-100g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5"> LooLoo Herbal Dental Gel Laung (Clove) 100g</h2>
-              </a>
-              <a class="header-navigation__link1"  href="/default/looloo-herbal-dental-gel-neem-100g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1"  link="/default/looloo-herbal-dental-gel-neem-100g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Dental Gel Neem 100g</h2>
-              </a>
-              <a class="header-navigation__link1" href="/default/looloo-herbal-dental-gel-miskal-with-peelu-bark-kalonji-100g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-dental-gel-miskal-with-peelu-bark-kalonji-100g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Dental Gel MisKal with Peelu Bark & Kalonji 100g
                 </h2>
-              </a>
-              <a class="header-navigation__link1" href="/default/looloo-herbal-dental-gel-aquamint-100g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-dental-gel-aquamint-100g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Dental Gel AquaMint 100g</h2>
-              </a>
-              <a class="header-navigation__link1"  href="/default/looloo-herbal-dental-gel-charcoal-100g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1"  link="/default/looloo-herbal-dental-gel-charcoal-100g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Dental Gel Charcoal 100g</h2>
-              </a>
-              <a class="header-navigation__link1" href="/default/looloo-herbal-medicated-tooth-powder-laung-clove-50g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-medicated-tooth-powder-laung-clove-50g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Medicated Tooth Powder Laung (Clove) 50g</h2>
-              </a>
-              <a class="header-navigation__link1" href="/default/looloo-herbal-medicated-tooth-powder-neem-50g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-medicated-tooth-powder-neem-50g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Medicated Tooth Powder Neem 50g</h2>
-              </a>
-              <a class="header-navigation__link1" href="/default/looloo-herbal-medicated-toothpowder-miskal-50g.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-herbal-medicated-toothpowder-miskal-50g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Herbal Medicated Toothpowder MisKal 50g</h2>
-              </a>
+              </SfLink>
             </div>
 
           </div>
@@ -102,18 +103,18 @@
         </span> 
 
         <!-- Hair Care Menu Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-show="isDropdownVisible1" @mouseenter="showDropdown1"
+        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-if="isDropdownVisible1" @mouseenter="showDropdown1"
         @mouseleave="hideDropdown1">
           <div class="header-navigation__subcategories-inner">
 
 
             <div class="header-navigation__subcategory">
-              <a class="header-navigation__link1" href="/default/looloo-mumtaz-amla-hair-oil-120ml.html">
+              <SfLink class="header-navigation__link1" link="/default/looloo-mumtaz-amla-hair-oil-120ml.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5"> LooLoo Mumtaz Amla Hair Oil 120ml</h2>
-              </a>
-              <a class="header-navigation__link1" href="http://localhost:3000/default/looloo-roshan-e-zulf-herbal-hair-oil-120ml.html">
+              </SfLink>
+              <SfLink class="header-navigation__link1" link="/default/looloo-roshan-e-zulf-herbal-hair-oil-120ml.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Roshan-e-Zulf Herbal Hair Oil 120ml</h2>
-              </a>
+              </SfLink>
             </div>
 
           </div>
@@ -142,13 +143,13 @@
         </span> 
 
         <!-- Joint Relief Menu Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-show="isDropdownVisible2" @mouseenter="showDropdown2"  @mouseleave="hideDropdown2">
+        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-if="isDropdownVisible2" @mouseenter="showDropdown2"  @mouseleave="hideDropdown2">
           <div class="header-navigation__subcategories-inner">
             
             <div class="header-navigation__subcategory">
-              <a class="header-navigation__link1" href="/default/looloo-oleo-rheuma-herbal-liniment-gel-40g.html">
+              <SfLink class="header-navigation__link1" link="/default/looloo-oleo-rheuma-herbal-liniment-gel-40g.html">
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5"> LooLoo Oleo Rheuma Herbal Liniment Gel 40g</h2>
-              </a>
+              </SfLink>
               <a class="header-navigation__link1" href="/default/joint-relief/looloo-oleo-rheuma-herbal-liniment-with-kalonji.html">
                   <div @mouseenter="showDropdown3_3rdLevel" @mouseleave="hideDropdown3_3rdLevel">
                       <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5 desk_3rd_level_menu">LooLoo Oleo Rheuma Herbal Liniment with Kalonji</h2>
@@ -157,18 +158,18 @@
 
                     <div class="header-navigation__subcategories-inner">
                       <div class="header-navigation__subcategory">
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-200ml.html">
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-200ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Rheuma Herbal Liniment with Kalonji 200ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-100ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-100ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Rheuma Herbal Liniment with Kalonji 100ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-50ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-50ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Rheuma Herbal Liniment with Kalonji 50ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-15ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-15ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Rheuma Herbal Liniment with Kalonji 15ml</h2>
-                        </a>
+                        </SfLink>
                       </div>
                     </div>
 
@@ -202,7 +203,7 @@
         </span> 
 
         <!-- Massage Oil Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-show="isDropdownVisible3" @mouseenter="showDropdown3"
+        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-if="isDropdownVisible3" @mouseenter="showDropdown3"
         @mouseleave="hideDropdown3">
           <div class="header-navigation__subcategories-inner">
 
@@ -217,26 +218,26 @@
 
                     <div class="header-navigation__subcategories-inner">
                       <div class="header-navigation__subcategory">
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-200ml.html">
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-200ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 200ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-100ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-100ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 100ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-50ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-50ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 50ml</h2>
-                        </a>
-                        <a class="header-navigation__link1" href="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-25ml.html">
+                        </SfLink>
+                        <SfLink class="header-navigation__link1" link="/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-25ml.html">
                           <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 25ml</h2>
-                        </a>
+                        </SfLink>
                       </div>
                     </div>
 
                   </div>
                 </a>
-                <a class="header-navigation__link1" href="/default/looloo-nanha-farishta-baby-massage-oil-120ml.html">
+                <SfLink class="header-navigation__link1" link="/default/looloo-nanha-farishta-baby-massage-oil-120ml.html">
                   <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Nanha Farishta Baby Massage Oil 120m</h2>
-                </a>
+                </SfLink>
             </div>
 
           </div>
@@ -265,7 +266,7 @@
         </span> 
 
         <!-- Immunity Booster Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-show="isDropdownVisible4" @mouseenter="showDropdown4"
+        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-if="isDropdownVisible4" @mouseenter="showDropdown4"
         @mouseleave="hideDropdown4">
           <div class="header-navigation__subcategories-inner">
 
@@ -280,12 +281,12 @@
 
                   <div class="header-navigation__subcategories-inner">
                     <div class="header-navigation__subcategory">
-                      <a class="header-navigation__link1" href="/default/looloo-black-gold-kalonji-oil-100ml.html">
+                      <SfLink class="header-navigation__link1" link="/default/looloo-black-gold-kalonji-oil-100ml.html">
                         <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Black Gold Kalonji Oil 100ml</h2>
-                      </a>
-                      <a class="header-navigation__link1" href="/default/looloo-black-gold-kalonji-oil-50ml.html">
+                      </SfLink>
+                      <SfLink class="header-navigation__link1" link="/default/looloo-black-gold-kalonji-oil-50ml.html">
                         <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Black Gold Kalonji Oil 50ml</h2>
-                      </a>
+                      </SfLink>
                     </div>
                   </div>
 
@@ -299,12 +300,12 @@
 
                   <div class="header-navigation__subcategories-inner">
                     <div class="header-navigation__subcategory">
-                      <a class="header-navigation__link1" href="/default/looloo-oleo-shifa-medicated-oil-with-kalonji.html">
+                      <SfLink class="header-navigation__link1" link="/default/looloo-oleo-shifa-medicated-oil-with-kalonji.html">
                         <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Shifa Medicated Oil with Kalonji</h2>
-                      </a>
-                      <a class="header-navigation__link1" href="/default/looloo-oleo-shifa-medicated-oil-with-kalonji-pack-of-6.html">
+                      </SfLink>
+                      <SfLink class="header-navigation__link1" link="/default/looloo-oleo-shifa-medicated-oil-with-kalonji-pack-of-6.html">
                         <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Shifa Medicated Oil with Kalonji Pack of 6</h2>
-                      </a>
+                      </SfLink>
                     </div>
                   </div>
 
@@ -339,21 +340,21 @@
         </span> 
 
         <!-- Cold & Headache Dropdown Here-->
-        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-show="isDropdownVisible5" @mouseenter="showDropdown5"
+        <div class="header-navigation__subcategories custom_dropdown menu2_dropdown"  v-if="isDropdownVisible5" @mouseenter="showDropdown5"
         @mouseleave="hideDropdown5">
           <div class="header-navigation__subcategories-inner">
 
 
             <div class="header-navigation__subcategory">
-              <a class="header-navigation__link1" href='/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji.html'>
+              <SfLink class="header-navigation__link1" link='/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji.html'>
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Cold Shield Roll-On Oil with Kalonji</h2>
-              </a>
-              <a class="header-navigation__link1" href='/default/cold-relief-offer-pack-of-3.html'>
+              </SfLink>
+              <SfLink class="header-navigation__link1" link='/default/cold-relief-offer-pack-of-3.html'>
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">Cold Relief Offer Pack of 3</h2>
-              </a>
-              <a class="header-navigation__link1" href='/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji-pack-of-8.html'>
+              </SfLink>
+              <SfLink class="header-navigation__link1" link='/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji-pack-of-8.html'>
                 <h2 class="sf-heading sf-heading--left sf-heading sf-heading--left h5">LooLoo Oleo Cold Shield Roll-On Oil with Kalonji Pack of 8</h2>
-              </a>
+              </SfLink>
             </div>
 
           </div>

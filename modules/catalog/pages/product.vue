@@ -18,7 +18,7 @@
           :is-fetching="loading"
           @fetchProduct="fetchProduct($event.query)"
         />
-        <ProductSkeleton v-else />
+        <!-- <ProductSkeleton v-else /> -->
         <LoadWhenVisible>
           <RelatedProducts />
         </LoadWhenVisible>

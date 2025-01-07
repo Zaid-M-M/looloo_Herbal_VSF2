@@ -142,7 +142,7 @@
           <HTMLContent
             v-if="productShortDescription"
             :content="productShortDescription"
-            tag="p"
+            tag="div"
             class="product__description desktop-only"
           />
 
@@ -471,6 +471,7 @@ export default defineComponent({
    border: 2px solid #a18e11;
    border-radius: 5px;
    background: transparent;
+  width: 130px;
 }
 .sf-add-to-cart__select-quantity button.sf-quantity-selector__button:first-child {
  border-right: 2px solid #a18e11;
@@ -478,7 +479,7 @@ export default defineComponent({
 }
 .sf-add-to-cart__select-quantity button.sf-quantity-selector__button {
  border-left: 2px solid #a18e11;
- font-size: 30px;
+ font-size: 25px;
  color: #a18e11;
  font-weight: 500;
  padding-top: 0;
@@ -486,7 +487,7 @@ export default defineComponent({
 }
 .sf-input__wrapper input {
    color: #727272;
-   font-size: 30px;
+   font-size: 25px;
    font-weight: 300;
    font-family: 'Montserrat';
 }
@@ -518,12 +519,13 @@ div#tabs {
 }
 .sf-tabs__content__tab {
    padding-top: 25px;
+   border-top:0px;
 }
 .sf-tabs__title {
- font-family: 'Montserrat';
- font-weight: 300;
- font-size: 15px;
- line-height:25px;
+  font-family: 'Montserrat' !important;
+  font-weight: 300;
+  font-size: 15px !important;
+  line-height: 25px !important;
 }
 .sf-tabs__title:hover {
  color: #a17b20;
@@ -539,6 +541,9 @@ div#tabs {
 }
 .prd_tabs_main {
    width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 .pt_col {
    width: 22%;
@@ -560,10 +565,29 @@ div#tabs {
 .pt_col p strong {
    display: block;
 }
+/* #product .product__description {
+    margin-top: -20px;
+} */
+#product .product__description h3{
+  color: #6d6b5d;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  margin: 20px 0 6px 0;
+}
+#product .product__description p{
+  color: #6d6b5d;
+  font-size: 15px;
+  margin: 0 0 7px 0;
+}
+#product .sf-tabs__content p.keyblod {
+  color: #6d6b5d;
+  margin: 0 0 2px 0;
+}
 ul.prd_tab_list {
    margin: 0;
    padding: 0;
    padding-left: 19px;
+   margin-bottom: 20px;
 }
 ul.prd_tab_list li {
    color: #6d6b5d;
@@ -779,7 +803,7 @@ span.sf-price__regular {
     margin-top: 2px;
   }
   .sf-tabs__content__tab {
-    padding-top: 5px;
+    padding-top: 20px;
     padding-left: 0;
   }
   .sf-tabs__tab .sf-tabs__title {

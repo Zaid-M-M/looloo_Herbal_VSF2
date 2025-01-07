@@ -39,49 +39,49 @@
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Dental Gel Laung (Clove) 100g')"
-            @click="navigateTo('/menu-a')"
+            @click="navigateTo('/default/looloo-herbal-dental-gel-laung-clove-100g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Dental Gel Neem 100g')"
-            @click="navigateTo('/menu-b')"
+            @click="navigateTo('/default/looloo-herbal-dental-gel-neem-100g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Dental Gel MisKal with Peelu Bark & Kalonji 100g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-herbal-dental-gel-miskal-with-peelu-bark-kalonji-100g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Dental Gel AquaMint 100g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-herbal-dental-gel-aquamint-100g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Dental Gel Charcoal 100g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('default/looloo-herbal-dental-gel-charcoal-100g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Medicated Tooth Powder Laung (Clove) 50g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-herbal-medicated-tooth-powder-laung-clove-50g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Medicated Tooth Powder Neem 50g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-herbal-medicated-tooth-powder-neem-50g.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Herbal Medicated Toothpowder MisKal 50g')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-herbal-medicated-toothpowder-miskal-50g.html')"
           />
         </SfList>
       </transition>
 
       <!-- Hair Care Menu -->
       <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl" @click="toggleMenu3">
-        <template #label>Hair Care</template>
+        <template #label><p @click="navigateTo('/default/oral-care.html')">Hair Care</p></template>
         <template #mobile-nav-icon>
           <span class="accord_icon">{{ isMenu3Expanded ? '-' : '+' }}</span>
         </template>
@@ -91,12 +91,12 @@
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Mumtaz Amla Hair Oil 120ml')"
-            @click="navigateTo('/menu-a')"
+            @click="navigateTo('/default/looloo-mumtaz-amla-hair-oil-120ml.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Roshan-e-Zulf Herbal Hair Oil 120ml')"
-            @click="navigateTo('/menu-b')"
+            @click="navigateTo('/default/looloo-roshan-e-zulf-herbal-hair-oil-120ml.html')"
           />
         </SfList>
       </transition>
@@ -104,7 +104,7 @@
 
       <!-- Joint Relief Menu -->
       <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl" @click="toggleMenu4">
-        <template #label>Joint Relief</template>
+        <template #label><p @click="navigateTo('/default/joint-relief.html')">Joint Relief</p></template>
         <template #mobile-nav-icon>
           <span class="accord_icon">{{ isMenu4Expanded ? '-' : '+' }}</span>
         </template>
@@ -114,11 +114,11 @@
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Oleo Rheuma Herbal Liniment Gel 40g')"
-            @click="navigateTo('/menu3-1')"
+            @click="navigateTo('/default/looloo-oleo-rheuma-herbal-liniment-gel-40g.html')"
           />
           
           <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl_1" @click="toggleMenu4_1">
-            <template #label>LooLoo Oleo Rheuma Herbal Liniment with Kalonji</template>
+            <template #label><p @click="navigateTo('/default/joint-relief/looloo-oleo-rheuma-herbal-liniment-with-kalonji.html')">LooLoo Oleo Rheuma Herbal Liniment with Kalonji</p></template>
             <template #mobile-nav-icon>
               <span class="accord_icon">{{ isMenu4_1Expanded ? '-' : '+' }}</span>
             </template>
@@ -129,22 +129,22 @@
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Rheuma Herbal Liniment with Kalonji 200ml')"
-                @click="navigateTo('/product-1')"
+                @click="navigateTo('/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-200ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Rheuma Herbal Liniment with Kalonji 100ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-100ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Rheuma Herbal Liniment with Kalonji 50ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-50ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Rheuma Herbal Liniment with Kalonji 15ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-rheuma-herbal-liniment-with-kalonji-15ml.html')"
               />
             </SfList>
           </transition>
@@ -155,7 +155,7 @@
 
       <!-- Massage Oil Menu -->
       <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl" @click="toggleMenu5">
-        <template #label>Massage Oil</template>
+        <template #label><p @click="navigateTo('/default/massage-oil.html')">Massage Oil</p></template>
         <template #mobile-nav-icon>
           <span class="accord_icon">{{ isMenu5Expanded ? '-' : '+' }}</span>
         </template>
@@ -164,7 +164,7 @@
         <SfList v-if="isMenu5Expanded" class="mobile-menu-sidebar__list">
           
           <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl_1" @click="toggleMenu5_1">
-            <template #label>LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric</template>
+            <template #label><p @click="navigateTo('/default/massage-oil/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric.html')">LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric</p></template>
             <template #mobile-nav-icon>
               <span class="accord_icon">{{ isMenu5_1Expanded ? '-' : '+' }}</span>
             </template>
@@ -174,22 +174,22 @@
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 200ml')"
-                @click="navigateTo('/product-1')"
+                @click="navigateTo('/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-200ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 100ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-100ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 50ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-50ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Oleo Hayat Herbal Massage Oil with Kalonji & Turmeric 25ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-oleo-hayat-herbal-massage-oil-with-kalonji-turmeric-25ml.html')"
               />
             </SfList>
           </transition>
@@ -197,7 +197,7 @@
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Nanha Farishta Baby Massage Oil 120ml')"
-            @click="navigateTo('/menu3-1')"
+            @click="navigateTo('/default/looloo-nanha-farishta-baby-massage-oil-120ml.html')"
           />
 
 
@@ -206,7 +206,7 @@
 
       <!-- Immunity Booster Menu -->
       <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl" @click="toggleMenu6">
-        <template #label>Immunity Booster</template>
+        <template #label><p @click="navigateTo('/default/immunity-booster.html')">Immunity Booster</p></template>
         <template #mobile-nav-icon>
           <span class="accord_icon">{{ isMenu6Expanded ? '-' : '+' }}</span>
         </template>
@@ -215,7 +215,7 @@
         <SfList v-if="isMenu6Expanded" class="mobile-menu-sidebar__list">
           
           <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl_1" @click="toggleMenu6_1">
-            <template #label>LooLoo Black Gold Kalonji Oil</template>
+            <template #label><p @click="navigateTo('/default/immunity-booster/looloo-black-gold-kalonji-oil.html')">LooLoo Black Gold Kalonji Oil</p></template>
             <template #mobile-nav-icon>
               <span class="accord_icon">{{ isMenu6_1Expanded ? '-' : '+' }}</span>
             </template>
@@ -225,18 +225,18 @@
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Black Gold Kalonji Oil 100ml')"
-                @click="navigateTo('/product-1')"
+                @click="navigateTo('/default/looloo-black-gold-kalonji-oil-100ml.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
                 :label="$i18n.t('LooLoo Black Gold Kalonji Oil 50ml')"
-                @click="navigateTo('/product-2')"
+                @click="navigateTo('/default/looloo-black-gold-kalonji-oil-50ml.html')"
               />
             </SfList>
           </transition>
 
           <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl_1" @click="toggleMenu6_2">
-            <template #label>LooLoo Oleo Shifa Medicated Oil</template>
+            <template #label><p @click="navigateTo('/default/immunity-booster/looloo-oleo-shifa-medicated-oil.html')">LooLoo Oleo Shifa Medicated Oil</p></template>
             <template #mobile-nav-icon>
               <span class="accord_icon">{{ isMenu6_2Expanded ? '-' : '+' }}</span>
             </template>
@@ -245,13 +245,13 @@
             <SfList v-if="isMenu6_2Expanded" class="mobile-menu-sidebar__list collapse-content">
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
-                :label="$i18n.t('LooLoo Oleo Shifa Medicated Oil with Kalonji Pack of 6')"
-                @click="navigateTo('/product-1')"
+                :label="$i18n.t('LooLoo Oleo Shifa Medicated Oil with Kalonji')"
+                @click="navigateTo('/default/looloo-oleo-shifa-medicated-oil-with-kalonji.html')"
               />
               <SfMenuItem
                 class="mobile-menu-sidebar__item mob_menu_lbl_2"
-                :label="$i18n.t('LooLoo Oleo Shifa Medicated Oil with Kalonji')"
-                @click="navigateTo('/product-2')"
+                :label="$i18n.t('LooLoo Oleo Shifa Medicated Oil with Kalonji Pack of 6')"
+                @click="navigateTo('/default/looloo-oleo-shifa-medicated-oil-with-kalonji-pack-of-6.html')"
               />
             </SfList>
           </transition>
@@ -261,7 +261,7 @@
 
        <!-- Cold & Headache Menu -->
        <SfMenuItem class="mobile-menu-sidebar__item mob_menu_lbl" @click="toggleMenu7">
-        <template #label>Cold & Headache</template>
+        <template #label><p @click="navigateTo('/default/cold-headache.html')">Cold & Headache</p></template>
         <template #mobile-nav-icon>
           <span class="accord_icon">{{ isMenu7Expanded ? '-' : '+' }}</span>
         </template>
@@ -271,24 +271,20 @@
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Oleo Cold Shield Roll-On Oil with Kalonji')"
-            @click="navigateTo('/menu-a')"
+            @click="navigateTo('/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('Cold Relief Offer Pack of 3')"
-            @click="navigateTo('/menu-b')"
+            @click="navigateTo('/default/cold-relief-offer-pack-of-3.html')"
           />
           <SfMenuItem
             class="mobile-menu-sidebar__item mob_menu_lbl_1"
             :label="$i18n.t('LooLoo Oleo Cold Shield Roll-On Oil with Kalonji Pack of 8')"
-            @click="navigateTo('/menu-c')"
+            @click="navigateTo('/default/looloo-oleo-cold-shield-roll-on-oil-with-kalonji-pack-of-8.html')"
           />
         </SfList>
       </transition>
-
-
-
-
       <!-- <SfMenuItem class="mobile-menu-sidebar__item" :label="$i18n.t('Menu3')" />
       <SfMenuItem class="mobile-menu-sidebar__item" :label="$i18n.t('Menu4')" /> -->
       

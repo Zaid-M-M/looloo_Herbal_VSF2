@@ -8,7 +8,7 @@
         <HeaderLogo />
       </template>
       <template #navigation>
-        <HeaderNavigation :category-tree="categoryTree" />
+        <HeaderNavigation />
       </template>
       <template #aside>
         <div class="sf-header__switchers">
